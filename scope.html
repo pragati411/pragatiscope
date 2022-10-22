@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+   // scope in global by default //
+
+// var name = 'pragati';
+//  var city = 'satna';
+
+//   function sayN (){
+//     var num = 10; // no exution it destroyed after the function//
+
+//     console.log(name);
+//   }
+// sayN();
+
+// console.log(num);
+
+
+// local scope or functional scope //
+var a = 10;
+
+function  first() 
+{
+    var a = 1;
+
+console.log(a);
+
+    
+    function child(){
+
+    var a = 2;
+console.log(a);
+    }
+
+child();
+
+}
+first();
+    
+function second(){
+console.log(a)  
+}
+second();
+
+var x = 1;
+{
+  
+    let  x = 10;
+    console.log(x) ; 
+ 
+}
+
+</script>
